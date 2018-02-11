@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=false; section>
+<@layout.registrationLayout displayInfo=false displayMessage=false; section>
     <#if section = "title">
         ${msg("loginTitle",(realm.displayName!''))}
     <#elseif section = "header">
@@ -17,7 +17,11 @@
                     </div>     
 
                     <div style="padding-top:30px" class="panel-body" >
-                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+			<#if message?has_content>
+                            <div id="login-alert" class="alert alert-danger col-sm-12">
+			        <span class="kc-feedback-text">${message.summary}</span>
+		 	    </div>
+ 			</#if>
 
                         <form id="kc-form-login" class="${properties.kcFormClass!}" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                             <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
