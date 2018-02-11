@@ -67,7 +67,7 @@
 
                             <div id="kc-form-buttons" style="margin-top:10px" class="${properties.kcFormButtonsClass!}">
                                 <div class="${properties.kcFormButtonsWrapperClass!}">
-				    <input class="${properties.kcButtonClass!} type="submit" value="${msg("doRegister")}"/>
+				    <input class="${properties.kcButtonClass!}" type="submit" value="${msg("doRegister")}"/>
 				</div>
 			    </div>
 			</form>
