@@ -66,9 +66,9 @@
                             <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
                             <div class="form-group">
                                 <div class="col-md-12 control">
-                                    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                    <div style="border-top: 1px solid#888; padding-top:15px;" >
                                             ${msg("noAccount")} 
-                                        <a tabindex="6" href="${url.registrationUrl}">
+                                        <a tabindex="6" href="${url.registrationUrl}" style="font-weight: bold;">
                                             ${msg("doRegister")}
                                         </a>
                                     </div>
