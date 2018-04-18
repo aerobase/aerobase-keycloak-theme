@@ -194,7 +194,7 @@ th.w-40 {
 /*********** New Menu ***********/
 
 .sidebar-pf{
-  min-height: 2000px!important;
+  height: 100%;
 }
 
 .sidebar-pf-left{
@@ -408,3 +408,18 @@ table.kc-authz-table-expanded {
   font-family: 'text-security-disc';
   font-size: 14px;
 }
+
+/* Aerobase changes to strech page and add scroll */
+.container-fluid {
+  height: 100%;
+  overflow: auto;
+}
+
+.container-fluid .row{
+  height: 100%;
+}
+
+.ng-scope {
+  height: 100%;
+}
+	
