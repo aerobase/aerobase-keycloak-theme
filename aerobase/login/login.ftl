@@ -23,7 +23,7 @@
 		 	    </div>
  			</#if>
 
-                        <form id="kc-form-login" class="${properties.kcFormClass!}" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
+                        <form id="kc-form-login" class="${properties.kcFormClass!}" onsubmit="login.disabled = true; return true;" action="${url.loginAction?keep_after('^[^#]*?://.*?[^/]*', 'r')}" method="post">
                             <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
 			        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <#if usernameEditDisabled??>
