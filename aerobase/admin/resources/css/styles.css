@@ -194,7 +194,9 @@ th.w-40 {
 /*********** New Menu ***********/
 
 .sidebar-pf{
-  height: 100%;
+  margin-bottom: -2000px;
+  padding-bottom: 2000px;
+  overflow: hidden;
 }
 
 .sidebar-pf-left{
@@ -411,10 +413,6 @@ table.kc-authz-table-expanded {
 
 /* Aerobase changes to strech page and add scroll */
 .container-fluid {
-  height: 100%;
+  height: calc(100% - 100px);
   overflow: auto;
-}
-
-.container-fluid .row{
-  height: 100%;
 }
