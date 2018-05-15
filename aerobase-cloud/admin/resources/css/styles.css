@@ -193,9 +193,14 @@ th.w-40 {
 
 /*********** New Menu ***********/
 
+.sidebar-pf{
+  margin-bottom: -2000px;
+  padding-bottom: 2000px;
+  overflow: hidden;
+}
 
 .sidebar-pf-left{
-  background: #292e34;
+  background: #424242;
 }
 
 .sidebar-pf .nav-pills > li a i, .sidebar-pf .nav-pills > li a span{
@@ -209,7 +214,7 @@ th.w-40 {
   line-height: 30px;
   border-left-width: 12px;
   border-left-style:  solid;
-  border-left-color: #292e34;
+  border-left-color: #424242;
   margin-left: -6px;
 }
 
@@ -404,4 +409,10 @@ table.kc-authz-table-expanded {
 .password-conceal {
   font-family: 'text-security-disc';
   font-size: 14px;
+}
+
+/* Aerobase changes to strech page and add scroll */
+.container-fluid {
+  height: calc(100% - 100px);
+  overflow: auto;
 }
