@@ -1,0 +1,16 @@
+.kc-logo-text {
+    background: url("../img/logo.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 64px;
+    width: 340px;
+    argin: 0 auto;
+}
+
+.login-pf body {
+   border-top:  3px solid #199dde;
+   background-image: url(../img/bg-login.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}

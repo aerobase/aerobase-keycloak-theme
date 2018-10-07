@@ -2,8 +2,6 @@
 <@layout.registrationLayout; section>
     <#if section = "title">
         ${msg("pageExpiredTitle")}
-    <#elseif section = "header">
-        ${msg("pageExpiredTitle")}
     <#elseif section = "foarm">
         <div class="container">
             <div id="loginbox" style="margin-top:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">

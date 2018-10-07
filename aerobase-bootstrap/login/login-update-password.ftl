@@ -2,8 +2,6 @@
 <@layout.registrationLayout displayInfo=false displayMessage=false; section>
     <#if section = "title">
         ${msg("updatePasswordTitle")}
-    <#elseif section = "header">
-        ${msg("updatePasswordTitle")}
     <#elseif section = "form">
         <div class="container">
             <div id="loginbox" style="margin-top:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
