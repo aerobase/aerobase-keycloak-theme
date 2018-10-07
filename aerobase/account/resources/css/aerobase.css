@@ -1,0 +1,40 @@
+.navbar-title {
+  background-image: none;
+  text-indent: 0;
+  width: inherit;
+}
+
+.navbar-pf .navbar-utility a:hover {
+  background-color: #0084b9 !important;
+}
+
+.navbar .navbar-brand {
+  padding: 10px 0;
+  display: block;
+}
+.navbar .navbar-brand h1 {
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  background: url(../img/brand.412c0413.svg) no-repeat center center;
+  width: 230px;
+  height: 12px;
+  text-indent: -9999px;
+}
+.navbar .navbar-utility {
+  font-size: 11px!important;
+  top: -34px !important;
+}
+.navbar .navbar-utility > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
+  top: 10px;
+}
+.navbar-pf .navbar-utility > li > a {
+  color: #cfcfcf!important;
+  border-left: 1px solid #2a2a2a!important;
+}
+
