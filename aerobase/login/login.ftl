@@ -47,6 +47,7 @@
                   <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
                     <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                   </div>
+		  <img src="https://aerobase.io/assets/base/img/layout/tracking.png" alt="" style="position:absolute; visibility:hidden"/>
             </form>
         </#if>
         </div>
@@ -67,5 +68,4 @@
             </div>
         </#if>
     </#if>
-    <img src="https://aerobase.io/assets/base/img/layout/tracking.png" alt="" style="position:absolute; visibility:hidden">
 </@layout.registrationLayout>
