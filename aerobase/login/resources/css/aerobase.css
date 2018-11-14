@@ -1,10 +1,10 @@
-.kc-logo-text {
-    background: url("../img/logo.png") no-repeat;
+div.kc-logo-text {
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 64px;
-    width: 340px;
-    argin: 0 auto;
+    height: 63px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .login-pf body {
