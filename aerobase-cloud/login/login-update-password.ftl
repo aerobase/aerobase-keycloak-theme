@@ -4,7 +4,7 @@
         ${msg("updatePasswordTitle")}
     <#elseif section = "form">
         <div class="container">
-            <div id="loginbox" style="margin-top:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                 <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Update Password</div>
