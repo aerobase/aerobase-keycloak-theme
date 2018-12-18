@@ -29,3 +29,9 @@
         margin-top: 20px;
     }
  }
+
+ @media (min-width: 542px) and (max-width: 1400px) {
+     #loginbox{
+        margin-top: 40px;
+    }
+ }

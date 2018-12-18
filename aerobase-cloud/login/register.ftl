@@ -49,14 +49,14 @@
 				<input type="password" id="password" class="${properties.kcInputClass!}" name="password" autocomplete="new-password" placeholder="${msg("password")}"/>
 			    </div>
 
-			    <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+			    <div style="margin-bottom: 15px" class="${properties.kcInputWrapperClass!}">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 				<input type="password" id="password-confirm" class="${properties.kcInputClass!}" name="password-confirm" placeholder="${msg("passwordConfirm")}"/>
 			    </div>
 			    </#if>
 
 			    <#if recaptchaRequired??>
-			    <div class="form-group">
+			    <div class="form-group" style="margin: 0px 15px;">
 				<div class="${properties.kcInputWrapperClass!}">
 				    <div class="g-recaptcha" data-size="compact" data-sitekey="${recaptchaSiteKey}"></div>
 				</div>
