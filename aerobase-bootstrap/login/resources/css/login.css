@@ -19,3 +19,20 @@
     width: 100%;
     height: 100%;
  }
+
+ #loginbox {
+    margin-top: 100px;
+ }
+
+ @media (max-width: 541px) {
+    #loginbox{
+        margin-top: 20px;
+    }
+ }
+
+ @media (min-width: 542px) and (max-width: 1400px) {
+     #loginbox{
+        margin-top: 40px;
+    }
+ }
+
