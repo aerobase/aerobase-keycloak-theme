@@ -13,7 +13,7 @@
                         </#if>
                     </div>
 
-                    <div style="padding-top:30px" class="panel-body" >
+                    <div class="panel-body" >
                         <#if message?has_content>
                             <div id="login-alert" class="alert alert-warning col-sm-12">
                                 <span class="kc-feedback-text">${message.summary}</span>

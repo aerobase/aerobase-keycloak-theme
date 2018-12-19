@@ -10,7 +10,7 @@
                         <div class="panel-title">Error</div>
                     </div>
 		
-	            <div style="padding-top:30px" class="panel-body" >		
+	            <div class="panel-body" >		
                         <div id="login-alert" class="alert alert-danger col-sm-12">
 			    <p class="instruction">${message.summary}</p>
                         </div>

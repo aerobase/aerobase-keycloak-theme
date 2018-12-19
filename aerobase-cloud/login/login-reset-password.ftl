@@ -10,7 +10,7 @@
                         <div class="panel-title">Reset Password</div>
                     </div>
 
-                    <div style="padding-top:30px" class="panel-body" >
+                    <div class="panel-body" >
                         <#if message?has_content>
                             <div id="login-alert" class="alert alert-danger col-sm-12">
                                 <span class="kc-feedback-text">${message.summary!''}</span>
@@ -22,7 +22,7 @@
                         </div>
 
 			<form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-			    <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+			    <div class="${properties.kcInputWrapperClass!}">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 		 	        <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus  placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>"/>
 			    </div>

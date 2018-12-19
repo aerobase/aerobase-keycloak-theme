@@ -10,7 +10,7 @@
                         <div class="panel-title">Update Password</div>
                     </div>
 
-                    <div style="padding-top:30px" class="panel-body" >
+                    <div class="panel-body" >
                         <#if message?has_content>
                             <div id="login-alert" class="alert alert-warning col-sm-12">
                                 <span class="kc-feedback-text">${message.summary!''}</span>
@@ -21,12 +21,12 @@
 			    <input type="text" id="username" name="username" value="${username}" autocomplete="username" readonly="readonly" style="display:none;"/>
 			    <input type="password" id="password" name="password" autocomplete="current-password" style="display:none;"/>
 
-		            <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+		            <div class="${properties.kcInputWrapperClass!}">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 				<input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}" autofocus autocomplete="new-password" placeholder="${msg("passwordNew")}"/>
 			    </div>
 
-                            <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+                            <div class="${properties.kcInputWrapperClass!}">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 				<input type="password" id="password-confirm" name="password-confirm" class="${properties.kcInputClass!}" autocomplete="new-password" placeholder="${msg("passwordConfirm")}"/>
 			    </div>

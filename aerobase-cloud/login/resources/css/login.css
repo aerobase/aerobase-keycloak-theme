@@ -6,7 +6,23 @@
  }
  
  .hidden {
-   visibility: hidden
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+ }
+
+ .input-group {
+    margin-bottom: 25px;
+ }
+
+ .panel-body{
+   padding-top: 30px;
  }
 
  #kc-logo-wrapper {
@@ -28,10 +44,28 @@
     #loginbox{
         margin-top: 20px;
     }
+
+    .input-group {
+        margin-bottom: 6px;
+    }
+     
+    .panel-body{
+       padding-top: 10px;
+    }
  }
 
  @media (min-width: 542px) and (max-width: 1400px) {
      #loginbox{
         margin-top: 40px;
     }
+     
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .panel-body{
+       padding-top: 20px;
+    }
+
  }
+

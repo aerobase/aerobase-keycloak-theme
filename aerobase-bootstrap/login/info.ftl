@@ -10,7 +10,7 @@
                         <div class="panel-title">Confirmation</div>
                     </div>
 
-		    <div style="padding-top:30px" class="panel-body" >
+		    <div class="panel-body" >
                         <div id="login-alert" class="alert alert-warning col-sm-12">
 			    <p class="instruction">${message.summary}<#if requiredActions??><#list requiredActions>: <b><#items as reqActionItem>${msg("requiredAction.${reqActionItem}")}<#sep>, </#items></b></#list><#else></#if></p>
                         </div>

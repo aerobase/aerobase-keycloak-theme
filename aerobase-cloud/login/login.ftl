@@ -14,7 +14,7 @@
 			</#if>
                     </div>     
 
-                    <div style="padding-top:30px" class="panel-body" >
+                    <div class="panel-body" >
 			<#if message?has_content>
                             <div id="login-alert" class="alert alert-danger col-sm-12">
 				<span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
@@ -22,7 +22,7 @@
  			</#if>
 
                         <form id="kc-form-login" class="${properties.kcFormClass!}" onsubmit="login.disabled = true; return true;" action="${url.loginAction?keep_after('^[^#]*?://.*?[^/]*', 'r')}" method="post">
-                            <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+                            <div class="${properties.kcInputWrapperClass!}">
 			        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <#if usernameEditDisabled??>
                                 <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>"/>
@@ -31,7 +31,7 @@
                             </#if>
                             </div>
 
-                    	    <div style="margin-bottom: 25px" class="${properties.kcInputWrapperClass!}">
+                    	    <div class="${properties.kcInputWrapperClass!}">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                 <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" placeholder="${msg("password")}"/>
                             </div>
