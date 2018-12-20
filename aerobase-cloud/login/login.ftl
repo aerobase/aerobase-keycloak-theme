@@ -36,7 +36,7 @@
                                 <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" placeholder="${msg("password")}"/>
                             </div>
 
-                            <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                            <div id="kc-form-options" class="${properties.kcFormOptionsClass!}" style="margin: 0px;">
                                 <#if realm.rememberMe && !usernameEditDisabled??>
                                 <div class="checkbox">
                                     <label>
