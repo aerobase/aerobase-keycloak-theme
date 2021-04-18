@@ -94,7 +94,6 @@
         $( "#mobileLogin" ).click(function() {
             $( this ).addClass("active");
             $( "#usernameLogin" ).removeClass( "active" );
-            $('#password').get(0).type = 'text';
             $( "#mobilePasswordLabel" ).removeClass( "hidden" );
             $( "#passwordLabel" ).addClass( "hidden" );
             $( "#mobileUsernameLabel" ).removeClass( "hidden" );
@@ -103,7 +102,6 @@
         $( "#usernameLogin" ).click(function() {
             $( this ).addClass("active");
             $( "#mobileLogin" ).removeClass( "active" );
-            $('#password').get(0).type = 'password';
             $( "#passwordLabel" ).removeClass( "hidden" );
             $( "#mobilePasswordLabel" ).addClass( "hidden" );
             $( "#usernameLabel" ).removeClass( "hidden" );
