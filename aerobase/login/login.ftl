@@ -8,8 +8,8 @@
         <#if properties.mobileLogin = "true" >
         <div class="pf-c-tabs" id="default-example" style="margin-top: 20px;">
             <ul class="nav nav-tabs">
-                <li id="usernameLogin" class="active"><a href="javascript:void(0);">Login with Username</a></li>
-                <li id="mobileLogin" class=""><a href="javascript:void(0);">Login with Mobile</a></li>
+                <li id="usernameLogin" class="active"><a href="javascript:void(0);">${msg("usernameLogin")}</a></li>
+                <li id="mobileLogin" class=""><a href="javascript:void(0);">${msg("mobileLogin")}</a></li>
             </ul>
         </div>
         </#if>
@@ -51,7 +51,6 @@
                                     <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
                                 </#if>
                             </div>
-
                     </div>
 
                     <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
@@ -80,8 +79,17 @@
             </div>
         </#if>
     </#if>
-    <#if properties.mobileLogin = "true" >
     <script type="text/javascript" src="${url.resourcesCommonPath}/node_modules/jquery/dist/jquery.min.js"></script>
+    <#if locale??>
+      <#if locale.currentLanguageTag == "de">
+        <script>
+          $('#kc-content').load('url', function() {
+    	       $( this ).addClass("kc-right");
+		  });
+        </script>
+      </#if>
+    </#if>
+    <#if properties.mobileLogin = "true" >
     <script>
         $( "#mobileLogin" ).click(function() {
             $( this ).addClass("active");

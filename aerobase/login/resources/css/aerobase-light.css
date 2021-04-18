@@ -29,3 +29,8 @@ div.kc-logo-text {
   padding: 160px 10px 20px;
   background-size: 300px;
 }
+
+
+.kc-right {
+   direction: rtl;	
+}

@@ -20,11 +20,21 @@
 				</div>
 
 				<div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-					<input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+					<input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doLogIn")}"/>
 				</div>
 			</div>
 		</form>
 	<#elseif section = "info" >
 		${msg("smsAuthInstruction")}
 	</#if>
+	<script type="text/javascript" src="${url.resourcesCommonPath}/node_modules/jquery/dist/jquery.min.js"></script>
+	<#if locale??>
+      <#if locale.currentLanguageTag == "de">
+        <script>
+          $('#kc-content').load('url', function() {
+    	       $( this ).addClass("kc-right");
+		  });
+        </script>
+      </#if>
+    </#if>
 </@layout.registrationLayout>
